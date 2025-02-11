@@ -1,0 +1,108 @@
+.bm-burger-button,
+.contain-hamburguer {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  /* Posicion del menu*/
+  .contain-hamburguer {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh; /* Ocupar toda la pantalla */
+    z-index: 1000;
+  }
+
+  .bm-burger-button {
+    display: block;
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    bottom: 30px;
+    right: 50px;
+  }
+
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background-color: rgb(14, 46, 80);
+  }
+
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+    background: rgb(0, 185, 142);
+  }
+
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+
+  /* Color/shape of close button cross - la cruz de cerrar */
+  .bm-cross {
+    background: white;
+  }
+
+  /*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+  .bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+  }
+
+  /* General sidebar styles */
+  .bm-menu {
+    background-color: rgb(14, 46, 80);
+    padding: 1.5em 1em 0;
+    font-size: 1.15em;
+  }
+
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: rgb(14, 46, 80);
+  }
+
+  /* Wrapper for item list */
+  /*
+  .bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+    
+  }
+  */
+
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 20px;
+  }
+
+  .bm-item-list a {
+    color: white;
+    padding: 0.5rem;
+  }
+  .bm-item-list a:hover {
+    background-color: rgb(0, 185, 142);
+  }
+
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .contain-hamburguer select {
+    color: white;
+    padding: 0.5rem;
+  }
+  .contain-hamburguer select > * {
+    color: black;
+  }
+  .contain-hamburguer select:hover {
+    background-color: rgb(0, 185, 142);
+    cursor: pointer;
+  }
+}

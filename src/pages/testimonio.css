@@ -1,0 +1,67 @@
+.testimonio-container {
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+.testimonio-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.testimonio-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 200%; /* Ajustado para mostrar 2 testimonios */
+}
+
+.testimonio-slide {
+  flex: 0 0 50%; /* Cada testimonio ocupa la mitad del carrusel */
+  box-sizing: border-box;
+  padding: 1rem;
+  text-align: center;
+  background-color: white;
+  border: thin dashed rgb(0, 185, 142);
+}
+
+.testimonio-slide img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.testimonio-btn {
+  background-color: rgb(0, 185, 142);
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.testimonio-prev {
+  left: 0;
+}
+
+.testimonio-next {
+  right: 0;
+}
+
+.testimonio-btn:hover {
+  background-color: rgb(14, 46, 80);
+}
+
+@media screen and (max-width:840px) {
+  .testimonio-slides{
+    display: grid;
+  }
+}
